@@ -9,6 +9,11 @@ body{
 	);
 }
 
+.fa-mobile{
+	color: #eee;
+	padding-top: 2px; 
+}
+
 dd{
 	font-size: 16px;
 }
@@ -48,10 +53,6 @@ dd{
 	color: #222;
 }
 
-.nav{
-	background: white;
-}
-
 /*Portfolio */
 
 li > dl{
@@ -85,6 +86,36 @@ dd span{
 }
 
 .portfolio .container .col-md-6{
+}
+
+/*portfolio images hover*/
+.imgDescription {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 0px;
+  background: rgba(12, 144, 93, 0.7);
+  color: #eee;
+  text-align: center;
+  padding-top: 18%;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+ }
+
+ .portDiv a:hover .imgDescription {
+  visibility: visible;
+  opacity: 1;
+}
+
+.portfolio .container{
+	background: white;
+	border-radius: 5px;
 }
 
 /*Resumo*/

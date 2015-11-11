@@ -144,10 +144,14 @@
     <!-- portfolio -->
     <div class="portfolio" ng-show="panel.isSelected(2)">  
       <div class="container">
-        <a href="#" class="col-md-6"><img src="img/Vera.png" alt="vera gerlack arquiteta" class="img-responsive">
-        </a>
-        <a href="#" class="col-md-6"><img src="img/Lucas.png" alt="lucas correa fotografia" class=" img-responsive">
-        </a>
+        <div class="row">
+          <div class="col-md-6 col-xs-12 portDiv" ng-repeat="thumbnail in panel.portfolio">
+          <a href="{{thumbnail.address}}">
+            <img class="img-responsive" ng-src="{{thumbnail.src}}" alt="{{thumbnail.alt}}">
+            <i class="fa fa-external-link fa-3x imgDescription"></i>
+          </a>
+          </div>
+        </div>
       </div>  
     </div>
   </section>
@@ -156,15 +160,19 @@
   <div class='site-footer'>
     <div class="container-fluid">
       <ul class="list-inline">
-        <li class="col-md-6 col-xs-12 text-center">
+        <li class="col-md-4 col-xs-6 text-center">
           <address>
             <h5>Contact</h5>
             <p><a href="#malito">matheusfgk@gmail.com</a></p>
           </address>
         </li>
-        <li class="col-md-4 col-xs-12 text-center">
+        <li class="col-md-4 col-xs-6 text-center">
           <h5>Tools used on this WebApp</h5>
           <p>Twitter Bootstrap, HTML5, CSS3, AngularJS, JQuery</p>
+        </li>
+        <li class="col-md-4 col-xs-12 text-center">
+          <h5>Mobile Ready</h5>
+          <i class="fa fa-mobile fa-2x"></i>
         </li>
       </ul>
     </div>  
