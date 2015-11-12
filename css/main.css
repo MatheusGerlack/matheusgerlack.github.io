@@ -1,3 +1,8 @@
+html{
+	position: relative;
+	min-height: 100%;
+}
+
 body{
 	font-family: 'Open Sans', sans-serif;
 	background: repeating-linear-gradient(
@@ -11,7 +16,7 @@ body{
 
 .fa-mobile{
 	color: #eee;
-	padding-top: 2px; 
+	padding-top: -1px; 
 }
 
 dd{
@@ -86,6 +91,7 @@ dd span{
 }
 
 .portfolio .container .col-md-6{
+	margin-bottom: 10px;
 }
 
 /*portfolio images hover*/
@@ -126,18 +132,26 @@ dd span{
 }
 
 /*Footer*/
-.site-footer .container-fluid{
+.footer .container-fluid{
 	background: linear-gradient(to bottom right, black, #222 ); /* Standard syntax */	
 }
 
-.site-footer p{
+.footer p{
 	color: #eee;
 }
 
-.site-footer h5{
+.footer h5{
 	color: #777;
 }
 
-.site-footer a{
+.footer a{
 	color: #eee;
+}
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  padding-top: 15px;
 }
