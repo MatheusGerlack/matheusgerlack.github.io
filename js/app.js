@@ -3,6 +3,7 @@
     var mySites = [
 
   	  { src: "img/Vera.png", alt:"- Vera Gerlack Arquiteta -", address:"http://matheusgerlack.github.io/vera-gerlack-arquiteta/" },
+  	  { src: "img/Mari.png", alt:"- Trabalho Faculdade -", address:"http://matheusgerlack.github.io/mari-fer/" },
   	  { src: "img/Lucas.png", alt:"- Lucas Correa Fotografia -", address:"http://matheusgerlack.github.io/lucas-correa-fotografia/" }
     
     ];
